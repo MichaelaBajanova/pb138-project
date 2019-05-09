@@ -1,5 +1,8 @@
 package cz.muni.fi.pb138;
 
+/**
+ * Class representing E-Competence element
+ */
 public class ECompetence {
     private String competence;
     private short level;

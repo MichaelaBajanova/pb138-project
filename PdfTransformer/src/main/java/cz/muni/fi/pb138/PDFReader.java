@@ -16,13 +16,25 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Class designed to extract the contents from CWA 16458-1_2018.pdf document into a Role object
+ */
 public class PDFReader {
+    /**
+     * Inner class representing the different deliverable elements
+     */
     private class Deliverables {
 
         private int acc;
         private int res;
         private int con;
 
+        /**
+         * Constructs a new deliverable object
+         * @param acc Accountable
+         * @param res Responsible
+         * @param con Constributor
+         */
         public Deliverables(int acc, int res, int con) {
             this.acc = acc;
             this.res = res;
@@ -32,11 +44,16 @@ public class PDFReader {
     private List<Deliverables> count = setCount();
     private int index = 1;
 
+    /**
+     * Parses the contents of the document
+     * @param path to the pdf document
+     * @return List of roles from the document
+     */
     public List<Role> read(Path path) {
         List<Role> roles = new ArrayList<>();
-        PDFTextStripper pdfStripper = null;
-        PDDocument pdDoc = null;
-        COSDocument cosDoc = null;
+        PDFTextStripper pdfStripper;
+        PDDocument pdDoc;
+        COSDocument cosDoc;
         File file = path.toFile();
         try {
             PDFParser parser = new PDFParser(new RandomAccessBufferedFileInputStream(new FileInputStream(file)));
@@ -44,11 +61,17 @@ public class PDFReader {
             cosDoc = parser.getDocument();
             pdfStripper = new PDFTextStripper();
             pdDoc = new PDDocument(cosDoc);
+
+            // Splits the document to individual pages
             Splitter splitter = new Splitter();
             List<PDDocument> pages = splitter.split(pdDoc);
             Iterator<PDDocument> iterator = pages.listIterator();
+
+            // Loop goes through every page
             while (iterator.hasNext()) {
                 PDDocument page = iterator.next();
+
+                // Only relevant pages get parsed
                 if (index >= 9 && index <= 38) {
                     String parsedText = pdfStripper.getText(page);
                     roles.add(parsePage(parsedText));
@@ -56,12 +79,18 @@ public class PDFReader {
                 ++index;
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Something went wrong");
+            roles = null;
         }
         index = 1;
         return roles;
     }
 
+    /**
+     * Parses one page of the document
+     * @param page to be parsed
+     * @return Role object created from the page
+     */
     private Role parsePage(String page) {
         Role role = new Role();
         Scanner sc = new Scanner(page);
@@ -94,18 +123,38 @@ public class PDFReader {
         return role;
     }
 
+    /**
+     * Extracts the profile title from the string
+     * @param text string from the parsed page
+     * @return name of the profile title
+     */
     private String parseTitle(String text) {
         return text.substring(13, text.length() - 4).trim();
     }
 
+    /**
+     * Extracts the summary statement from the string
+     * @param text string from the parsed page
+     * @return summary statement
+     */
     private String parseSummary(String text) {
         return text.substring(17).trim();
     }
 
+    /**
+     * Extracts the mission from the string
+     * @param text string from the parsed page
+     * @return mission
+     */
     private String parseMission(String text) {
         return text.substring(7).trim();
     }
 
+    /**
+     * Extracts deliverables and stores them in the currently constructed role object
+     * @param text string from the parsed page
+     * @param role object currently being created
+     */
     private void parseDeliverables(String text, Role role) {
         text = text.substring(11).trim();
         String[] deliverables = text.split("•");
@@ -124,6 +173,11 @@ public class PDFReader {
         }
     }
 
+    /**
+     * Extracts main tasks and stores them into the currently constructed role object
+     * @param text string from the parsed page
+     * @param role object currently being created
+     */
     private void parseMainTask(String text, Role role) {
         text = text.substring(11, text.length() - 13);
         String[] main = text.split("•");
@@ -134,6 +188,11 @@ public class PDFReader {
         }
     }
 
+    /**
+     * Extracts competences and their level from the string, and stores them in a role.
+     * @param text string from the parsed page
+     * @param role object currently being created
+     */
     private void parseCompetences(String text, Role role) {
         Scanner sc = new Scanner(text.substring(11));
         while (sc.hasNext()) {
@@ -149,8 +208,11 @@ public class PDFReader {
     }
 
 
-
-
+    /**
+     * Sets the distribution of accountable, responsible and contributor points
+     * in deliverables table
+     * @return list of deliverables distribution
+     */
     private List<Deliverables> setCount() {
         List<Deliverables> list = new ArrayList<>();
         list.add(new Deliverables(1, 1, 3));

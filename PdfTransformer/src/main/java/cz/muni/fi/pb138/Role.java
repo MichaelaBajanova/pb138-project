@@ -8,6 +8,9 @@ import java.util.List;
  */
 public class Role {
 
+    /**
+     * Attributes according to the xml schema
+     */
     private String title;
     private String summary;
     private String mission;
