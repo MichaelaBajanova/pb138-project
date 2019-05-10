@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+
+<xsd:schema version="1.1"
+			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+			xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1">
+
+	<xsd:element name="title" type="titleType"/>
+	<xsd:simpleType name="titleType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="^(\p{Lu}+ ){1,10}$"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:element name="summary"/>
+	<xsd:simpleType name="summaryType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="^(\p{Lu}\p{Ll}+)+.$"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:element name="mission" type="missionType"/>
+	<xsd:simpleType name="missionType">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="^((\p{Lu}\p{Ll}+ )+.)(( \p{Lu}\p{Ll}+ )+.){1,2}$"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:element name="deliverables" type="deliverablesType"/>
+	<xsd:complexType name="deliverablesType">
+		<xsd:sequence>
+			<xsd:element ref="accountable"/>
+			<xsd:element ref="responsible"/>
+			<xsd:element ref="contributor"/>
+		</xsd:sequence>
+		<xs:assert test="count(*/deliverable) &lt;= 7"/>
+	</xsd:complexType>
+	
+	<xsd:element name="accountable" type="ARCType"/>
+	<xsd:element name="responsible" type="ARCType"/>
+	<xsd:element name="contributor" type="ARCType"/>
+	<xsd:complexType name="ARCType">
+		<xsd:sequence>
+			<xsd:element name="deliverable" type="xsd:string" minOccurs="0" maxOccurs="6"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="tasks" type="tasksType"/>
+	<xsd:complexType name="tasksType">
+		<xsd:sequence>
+			<xsd:element name="task" type="xsd:string" minOccurs="6" maxOccurs="8"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="competences" type="competencesType"/>
+	<xsd:complexType name="competencesType">
+		<xsd:sequence>
+			<xsd:element ref="competence" minOccurs="4" maxOccurs="5"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="competence" type="xsd:string">
+		<xsd:complexType>
+			<xsd:attribute ref="level"/>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:attribute name="level" type="levelType"/>
+	<xsd:simpleType name="levelType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="1"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:element name="kpi" type="xsd:string"/>
+
+	<xsd:element name="profile" type="profileType"/>
+	<xsd:complexType name="profileType">
+		<xsd:sequence>
+			<xsd:element ref="title"/>
+			<xsd:element ref="summary"/>
+			<xsd:element ref="mission"/>
+			<xsd:element ref="deliverables"/>
+			<xsd:element ref="tasks"/>
+			<xsd:element ref="competences"/>
+			<xsd:element ref="kpi"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>
