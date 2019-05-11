@@ -210,7 +210,7 @@ public class PDFReader {
 
     /**
      * Sets the distribution of accountable, responsible and contributor points
-     * in deliverables table
+     * in deliverables table.
      * @return list of deliverables distribution
      */
     private List<Deliverables> setCount() {
