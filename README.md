@@ -11,18 +11,23 @@ from the CWA 16458-1 2018 PDF document and transform them into an xml file.
 - [ ] Creating xslt and transforming the xml into html files.
 
 ## Description
-The program first splits the PDF document into pages, and the extracts text from the relevant pages
+The program first splits the already included PDF document into pages, and the extracts text from the relevant pages
 using Apache PDFBox library. The resulting text is then parsed into the Role class, which contains attributes
-based on the xml schema already developed. The program will then generate an xml file from the data in the class.
+based on the xml schema already developed. The second part of the program the generates an xml file from the data of the object,
+and stores them locally on the disk.
+
+## How to run
+`javac Main.java`
+`java Main`
 
 ## Libraries used
 - [Apache PDFBox](https://pdfbox.apache.org/)
 
 ---------
 ## Authors
-- Michaela Bajánová
-- Filip Daniel Fedin
-- Ľudovít Kopcsányi
-- Matej Macák
+- Michaela Bajánová: Responsible for creating xml schema
+- Filip Daniel Fedin: Responsible for creating the first part of the program
+- Ľudovít Kopcsányi: Responsible for creating the second part of the program
+- Matej Macák: Responsible for creating the xslt file
 
 
