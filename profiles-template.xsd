@@ -8,21 +8,21 @@
 	<xsd:element name="title" type="titleType"/>
 	<xsd:simpleType name="titleType">
 		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="^(\p{Lu}+ ){1,10}$"/>
+			<xsd:pattern value="^(\p{Lu}+ |\(\p{Lu}+\) ){1,9}ROLE$"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 
 	<xsd:element name="summary"/>
 	<xsd:simpleType name="summaryType">
 		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="^(\p{Lu}\p{Ll}+)+.$"/>
+			<xsd:pattern value="^(\p{Lu}[^\.]+)\.$"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 
 	<xsd:element name="mission" type="missionType"/>
 	<xsd:simpleType name="missionType">
 		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="^((\p{Lu}\p{Ll}+ )+.)(( \p{Lu}\p{Ll}+ )+.){1,2}$"/>
+			<xsd:pattern value="^((\p{Lu}[^\.]+)\. ){1,2}(\p{Lu}[^\.]+)\.$"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 
@@ -59,11 +59,14 @@
 		</xsd:sequence>
 	</xsd:complexType>
 
-	<xsd:element name="competence" type="xsd:string">
-		<xsd:complexType>
-			<xsd:attribute ref="level"/>
-		</xsd:complexType>
-	</xsd:element>
+	<xsd:element name="competence" type="competenceType"/>
+	<xsd:complexType name="competenceType">
+		<xsd:simpleContent>
+			<xsd:extension base="xsd:string">
+				<xsd:attribute ref="level"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
 
 	<xsd:attribute name="level" type="levelType"/>
 	<xsd:simpleType name="levelType">
