@@ -19,7 +19,7 @@ Code for the PDF parser is located in `PdfTransformer` directory. The dircetory 
 
 `ECompetence` represents e-competence from role profile in the CWA 16458-1 2018 document. 
 
-`PDFReader` is a class responsible for parsing PDF contents. The main logic of the parser is in this class. The PDF document is split into pages and text is extracted from relevant pages using Apache PDFBox library. Resulting text is then parsed into `Role` class, 
+`PDFReader` is a class responsible for parsing PDF contents. The main logic of the parser is in this class. The PDF document is split into pages and text is extracted from relevant pages using Apache PDFBox library. Resulting text is then parsed into `Role` class.
 
 The part of the program responsible for transforming parsed data into XML file generates XML files from data in `Role` objects and stores them locally on the disk. //TODO when this part is finished
 
