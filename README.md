@@ -24,8 +24,8 @@ Code for the PDF parser is located in `PdfTransformer` directory. The dircetory 
 The part of the program responsible for transforming parsed data into XML file generates XML files from data in `Role` objects and stores them locally on the disk. //TODO when this part is finished
 
 ## How to run
-`javac Main.java`
-`java Main`
+`javac Main.java
+java Main`
 
 ## Libraries used
 - [Apache PDFBox](https://pdfbox.apache.org/)
