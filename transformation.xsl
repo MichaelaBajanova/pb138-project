@@ -15,11 +15,11 @@
             <head>
                 <title>European E-competence</title>
                 <meta http-equiv="Content-Style-Type" content="text/css" />
-                <link rel="stylesheet" href="recipes.css" type="text/css" media="screen" />
+                <link rel="stylesheet" href="styling.css" type="text/css" media="screen" />
             </head>
             <body>
                 <h1>
-                    <xsl:value-of select="r:title"/>
+                    <xsl:apply-templates select="r:title"/>
                 </h1>
                 <h2>Summary</h2>
                 <div>
@@ -27,7 +27,7 @@
                 </div>
                 <h2>Mission</h2>
                 <xsl:apply-templates select="r:mission"/>
-                <h3>Deliverables</h3>
+                <h2>Deliverables</h2>
                 <xsl:apply-templates select="r:deliverables"/>
                 <h2>Tasks</h2>
                 <xsl:apply-templates select="r:tasks"/>
@@ -38,6 +38,10 @@
                 </div>
             </body>
         </html>
+    </xsl:template>
+
+    <xsl:template match="r:title">
+        <xsl:value-of select="."/>
     </xsl:template>
 
     <xsl:template match="r:mission">
