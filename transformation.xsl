@@ -26,10 +26,11 @@
                     <xsl:value-of select="r:summary"/>
                 </div>
                 <h2>Mission</h2>
-                <div>
-                    <xsl:value-of select="r:mission"/>
-                </div>
+                <xsl:apply-templates select="r:mission"/>
+                <h3>Deliverables</h3>
                 <xsl:apply-templates select="r:deliverables"/>
+                <h2>Tasks</h2>
+                <xsl:apply-templates select="r:tasks"/>
                 <xsl:apply-templates select="r:competences"/>
                 <h2>KPI</h2>
                 <div>
@@ -39,51 +40,59 @@
         </html>
     </xsl:template>
 
+    <xsl:template match="r:mission">
+        <div>
+            <xsl:value-of select="."/>
+        </div>
+    </xsl:template>
+
     <xsl:template match="/r:deliverables">
-        <h2>"Deliverables</h2>
-        <h3>:Accountable</h3>
         <xsl:apply-templates select="r:accountable"/>
-        <h3>:Responsible</h3>
         <xsl:apply-templates select="r:responsible"/>
-        <h3>:Contributor</h3>
         <xsl:apply-templates select="r:contributor"/>
     </xsl:template>
 
     <xsl:template match='r:accountable'>
-        <li>
-            <xsl:value-of select="r:deliverable"/>
-        </li>
+        <h3>Accountable</h3>
+        <xsl:apply-templates select="r:deliverable"/>
     </xsl:template>
 
     <xsl:template match='r:responsible'>
-        <li>
-            <xsl:value-of select="r:deliverable"/>
-        </li>
+        <h3>Responsible</h3>
+        <xsl:apply-templates select="r:deliverable"/>
     </xsl:template>
 
     <xsl:template match='r:contributor'>
+        <h3>Contributor</h3>
+        <xsl:apply-templates select="r:deliverable"/>
+    </xsl:template>
+
+    <xsl:template match="r:deliverable">
         <li>
-            <xsl:value-of select="r:deliverable"/>
+            <xsl:value-of select="."/>
         </li>
     </xsl:template>
 
     <xsl:template match='r:tasks'>
-        <h2>Tasks</h2>
-        <ul>
-            <xsl:value-of select="r:task"/>
-        </ul>
+        <xsl:apply-templates select="r:task"/>
+    </xsl:template>
+
+    <xsl:template match="r:task">
+        <div>
+            <xsl:value-of select="."/>
+        </div>
     </xsl:template>
 
     <xsl:template match="r:competences">
         <h2>Competences</h2>
-        <ol>
-            <xsl:apply-templates select="r:competence"/>
-        </ol>
+        <xsl:apply-templates select="r:competence"/>
     </xsl:template>
 
     <xsl:template match="r:competence">
-        <xsl:value-of select="."/>
-        <xsl:text> Level: </xsl:text>
-        <xsl:value-of select="./@level"/>
+        <ol>
+            <xsl:value-of select="."/>
+            <xsl:text>Level: </xsl:text>
+            <xsl:value-of select="./@level"/>
+        </ol>
     </xsl:template>
 </xsl:stylesheet>
