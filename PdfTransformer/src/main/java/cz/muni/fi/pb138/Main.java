@@ -6,12 +6,15 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+
+
         Path path = Paths.get("test.pdf");
         PDFReader pdfReader = new PDFReader();
         List<Role> roles = pdfReader.read(path);
         for (Role r : roles) {
-            System.out.println(r.toString());
+            JavaToXML.convert(r, r.getTitle());
         }
+
     }
 }
