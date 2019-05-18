@@ -6,7 +6,6 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
-import java.io.Console;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.ArrayList;
@@ -47,9 +46,18 @@ public class JavaToXML {
 		responsible.setDeliverable(role.getResponsible().toArray(new String[0]));
 		contributor.setDeliverable(role.getContributor().toArray(new String[0]));
 
-		deliverables.setAccountable(accountable);
-		deliverables.setResponsible(responsible);
-		deliverables.setContributor(contributor);
+		if (accountable.getDeliverable().length != 0) {
+			deliverables.setAccountable(accountable);
+		}
+
+		if (responsible.getDeliverable().length != 0) {
+			deliverables.setResponsible(responsible);
+		}
+
+		if (contributor.getDeliverable().length != 0) {
+			deliverables.setContributor(contributor);
+		}
+
 		profile.setDeliverables(deliverables);
 
 		Tasks tasks = new Tasks();
@@ -148,6 +156,7 @@ class Profile {
 }
 
 @XmlRootElement
+@XmlType(propOrder={"accountable", "responsible", "contributor"})
 class Deliverables {
 
 	private Accountable accountable;
