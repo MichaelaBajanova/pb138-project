@@ -46,18 +46,9 @@ public class JavaToXML {
 		responsible.setDeliverable(role.getResponsible().toArray(new String[0]));
 		contributor.setDeliverable(role.getContributor().toArray(new String[0]));
 
-		if (accountable.getDeliverable().length != 0) {
-			deliverables.setAccountable(accountable);
-		}
-
-		if (responsible.getDeliverable().length != 0) {
-			deliverables.setResponsible(responsible);
-		}
-
-		if (contributor.getDeliverable().length != 0) {
-			deliverables.setContributor(contributor);
-		}
-
+		deliverables.setAccountable(accountable);
+		deliverables.setResponsible(responsible);
+		deliverables.setContributor(contributor);
 		profile.setDeliverables(deliverables);
 
 		Tasks tasks = new Tasks();
