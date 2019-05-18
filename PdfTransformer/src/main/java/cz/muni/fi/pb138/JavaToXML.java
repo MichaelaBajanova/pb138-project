@@ -68,12 +68,12 @@ public class JavaToXML {
 		List<Competence> competence = new ArrayList<>();
 		for (ECompetence ec : role.geteCompetence()) {
 			Competence currCompetence = new Competence();
-			currCompetence.setCompetence(ec.getCompetence());
+			currCompetence.setValue(ec.getCompetence());
 			currCompetence.setLevel(Short.toString(ec.getLevel()));
 			competence.add(currCompetence);
 		}
 
-		competences.setCompetences(competence.toArray(new Competence[0]));
+		competences.setCompetence(competence.toArray(new Competence[0]));
 
 		profile.setCompetences(competences);
 
@@ -248,14 +248,14 @@ class Tasks {
 @XmlRootElement
 class Competences {
 
-	private Competence[] competences;
+	private Competence[] competence;
 
-	public Competence[] getCompetences() {
-		return competences;
+	public Competence[] getCompetence() {
+		return competence;
 	}
 
-	public void setCompetences(Competence[] competence) {
-		this.competences = competence;
+	public void setCompetence(Competence[] competence) {
+		this.competence = competence;
 	}
 }
 
@@ -264,7 +264,7 @@ class Competence {
 
 	private String level;
 
-	private String competence;
+	private String value;
 
 	@XmlAttribute
 	public String getLevel() {
@@ -276,11 +276,11 @@ class Competence {
 	}
 
 	@XmlValue
-	public String getCompetence() {
-		return competence;
+	public String getValue() {
+		return value;
 	}
 
-	public void setCompetence(String competence) {
-		this.competence = competence;
+	public void setValue(String competence) {
+		this.value = competence;
 	}
 }
