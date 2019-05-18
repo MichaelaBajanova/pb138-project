@@ -180,7 +180,7 @@ public class PDFReader {
      */
     private void parseMainTask(String text, Role role) {
         text = text.substring(11, text.length() - 13);
-        String[] main = text.split("•");
+        String[] main = text.split("•|\uF0A7");
         for (String i : main) {
             if (!i.trim().isEmpty()) {
                 role.getMainTask().add(i.trim());
