@@ -1,16 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
-                xmlns="http://www.w3.org/1999/xhtml"
-                xmlns:r="http://recipes.org">
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xsl:stylesheet version = "1.0"
+                xmlns:xsl = "http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:output method="xml"
-                doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
-                doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
-                encoding="UTF-8"
-                indent="yes"
-    />
-
-    <xsl:template match="/r:profile">
+    <xsl:template match="/profile">
         <html>
             <head>
                 <title>European E-competence</title>
@@ -19,80 +11,80 @@
             </head>
             <body>
                 <h1>
-                    <xsl:apply-templates select="r:title"/>
+                    <xsl:apply-templates select="title"/>
                 </h1>
                 <h2>Summary</h2>
                 <div>
-                    <xsl:value-of select="r:summary"/>
+                    <xsl:value-of select="summary"/>
                 </div>
                 <h2>Mission</h2>
-                <xsl:apply-templates select="r:mission"/>
+                <xsl:apply-templates select="mission"/>
                 <h2>Deliverables</h2>
-                <xsl:apply-templates select="r:deliverables"/>
+                <xsl:apply-templates select="deliverables"/>
                 <h2>Tasks</h2>
-                <xsl:apply-templates select="r:tasks"/>
-                <xsl:apply-templates select="r:competences"/>
+                <xsl:apply-templates select="tasks"/>
+                <xsl:apply-templates select="competences"/>
                 <h2>KPI</h2>
                 <div>
-                        <xsl:value-of select="r:kpi"/>
+                    <xsl:value-of select="kpi"/>
                 </div>
             </body>
         </html>
     </xsl:template>
 
-    <xsl:template match="r:title">
+    <xsl:template match="title">
         <xsl:value-of select="."/>
     </xsl:template>
 
-    <xsl:template match="r:mission">
+    <xsl:template match="mission">
         <div>
             <xsl:value-of select="."/>
         </div>
     </xsl:template>
 
-    <xsl:template match="/r:deliverables">
-        <xsl:apply-templates select="r:accountable"/>
-        <xsl:apply-templates select="r:responsible"/>
-        <xsl:apply-templates select="r:contributor"/>
+    <xsl:template match="/deliverables">
+        <xsl:apply-templates select="accountable"/>
+        <xsl:apply-templates select="responsible"/>
+        <xsl:apply-templates select="contributor"/>
     </xsl:template>
 
-    <xsl:template match='r:accountable'>
+    <xsl:template match='accountable'>
         <h3>Accountable</h3>
-        <xsl:apply-templates select="r:deliverable"/>
+        <xsl:apply-templates select="deliverable"/>
     </xsl:template>
 
-    <xsl:template match='r:responsible'>
+    <xsl:template match='responsible'>
         <h3>Responsible</h3>
-        <xsl:apply-templates select="r:deliverable"/>
+        <xsl:apply-templates select="deliverable"/>
     </xsl:template>
 
-    <xsl:template match='r:contributor'>
+    <xsl:template match='contributor'>
         <h3>Contributor</h3>
-        <xsl:apply-templates select="r:deliverable"/>
+        <xsl:apply-templates select="deliverable"/>
     </xsl:template>
 
-    <xsl:template match="r:deliverable">
+    <xsl:template match="deliverable">
         <li>
             <xsl:value-of select="."/>
         </li>
     </xsl:template>
 
-    <xsl:template match='r:tasks'>
-        <xsl:apply-templates select="r:task"/>
+    <xsl:template match='tasks'>
+        <xsl:apply-templates select="task"/>
     </xsl:template>
 
-    <xsl:template match="r:task">
+    <xsl:template match="task">
         <div>
             <xsl:value-of select="."/>
         </div>
     </xsl:template>
 
-    <xsl:template match="r:competences">
+    <xsl:template match="competences">
         <h2>Competences</h2>
-        <xsl:apply-templates select="r:competence"/>
+        <xsl:apply-templates select="competence"/>
     </xsl:template>
 
-    <xsl:template match="r:competence">
+    <xsl:template match="competence">
         <ol>
             <xsl:value-of select="."/>
             <xsl:text>Level: </xsl:text>
