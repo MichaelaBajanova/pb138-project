@@ -8,7 +8,7 @@ from the CWA 16458-1 2018 PDF document and transform them into XML file.
 - [x] Creating XML Schema
 - [x] Creating PDF parser for extracting role profiles from CWA 16458-1 2018 document.
 - [x] Creating program to transform the data into a XML file valid by the XML Schema
-- [ ] Creating XSLT and transforming the XML into HTML files.
+- [x] Creating XSLT and transforming the XML into HTML files.
 
 ## Documentation
 The PDF parser was created for the sole purpose of parsing the CWA 16458-1 2018 document and it is not a general solution to parsing PDF documents. 
