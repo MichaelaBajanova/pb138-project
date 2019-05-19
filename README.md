@@ -7,11 +7,11 @@ from the CWA 16458-1 2018 PDF document and transform them into XML file.
 
 - [x] Creating XML Schema
 - [x] Creating PDF parser for extracting role profiles from CWA 16458-1 2018 document.
-- [ ] Creating program to transform the data into a XML file valid by the XML Schema
+- [x] Creating program to transform the data into a XML file valid by the XML Schema
 - [ ] Creating XSLT and transforming the XML into HTML files.
 
 ## Documentation
-The PDF parser was created for purposes of parsing the CWA 16458-1 2018 document and it is not a general solution to parsing PDF documents. 
+The PDF parser was created for the sole purpose of parsing the CWA 16458-1 2018 document and it is not a general solution to parsing PDF documents. 
 
 Code for the PDF parser is located in `PdfTransformer` directory. The dircetory also contains the CWA 16458-1 2018 document named as `test.pdf`. 
 
@@ -19,16 +19,17 @@ Code for the PDF parser is located in `PdfTransformer` directory. The dircetory 
 
 `ECompetence` represents e-competence from role profile in the CWA 16458-1 2018 document. 
 
-`PDFReader` is a class responsible for parsing PDF contents. The main logic of the parser is in this class. The PDF document is split into pages and text is extracted from relevant pages using Apache PDFBox library. Resulting text is then parsed into `Role` class.
+`PDFReader` is a class responsible for parsing PDF contents. The main logic of the parser is in this class. The PDF document is split into pages and text is extracted from relevant pages using Apache PDFBox library. Resulting text is then parsed into `Role` class. A list of Roles is then generated and returned from the `read` method of this class.
 
-The part of the program responsible for transforming parsed data into XML file generates XML files from data in `Role` objects and stores them locally on the disk. //TODO when this part is finished
+`JavaToXML` is a class that uses [javax.xml.bind](https://docs.oracle.com/javase/7/docs/api/javax/xml/bind/package-summary.html) library, to generate XML files and store them into a created output folder.
+
 
 ## How to run
-`javac Main.java`
-`java Main`
+`java -jar PdfTransformer.jar <path to the CWA 16458-1 2018 PDF document>`
 
 ## Libraries used
 - [Apache PDFBox](https://pdfbox.apache.org/)
+- [javax.xml.bind](https://docs.oracle.com/javase/7/docs/api/javax/xml/bind/package-summary.html)
 
 ---------
 ## Authors
