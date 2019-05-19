@@ -1,0 +1,41 @@
+body, html {
+	margin: 0px;
+	padding: 0;
+	color: #000;
+	text-align: center;
+	font-family: arial, tahoma, verdana;
+	background: #fefefe;
+}
+
+.header {
+	width: 100%;
+	padding: 20px;
+	background-color: #233B90;
+}
+
+.header h1 {
+	color: #fefefe;
+}
+
+a:link, a:visited {
+	color: #233B90;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0D1F60;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	margin-left: -20px;
+}
+
+li:hover {
+	background-color: #f0f0f0;
+}

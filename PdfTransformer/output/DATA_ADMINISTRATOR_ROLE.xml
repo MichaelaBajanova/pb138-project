@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>DATA ADMINISTRATOR ROLE</title>
+    <summary>Designs, implements or monitors and maintains data sets, structured (databases) and unstructured (big data).</summary>
+    <mission>Administer and monitor data management systems and ensures design, consistency, quality and security.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Data Management System</deliverable>
+        </accountable>
+        <responsible>
+            <deliverable>Solution in Operation (data management system)</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Test Procedure</deliverable>
+            <deliverable>Data Protection Policy</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Apply standards methods and tools for measuring and reporting on wide set of relevant performance indicators (response time, availability, safety, integrity)</task>
+        <task>Produce data set procedures and instructions for other analysts or administrators</task>
+        <task>Monitor and maintain data management systems</task>
+        <task>Ensure the integrity and security of existing data management systems</task>
+        <task>Identify, investigate and correct problems or incidents related to data management systems</task>
+        <task>Provide training, support, advice and guidance on data set issues to other information system practitioners</task>
+    </tasks>
+    <competences>
+        <competence level="3">B.1. Application Development</competence>
+        <competence level="3">B.2.  Component integration</competence>
+        <competence level="3">C.2. Change Support</competence>
+        <competence level="3">D.10. Information and Knowledge Management</competence>
+        <competence level="3">E.8. Information Security Management</competence>
+    </competences>
+    <kpi>Accessibility, availability and integrity of data set</kpi>
+</profile>

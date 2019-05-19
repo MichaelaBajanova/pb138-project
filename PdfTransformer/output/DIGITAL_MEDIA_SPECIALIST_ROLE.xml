@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>DIGITAL MEDIA SPECIALIST ROLE</title>
+    <summary>Integrates digital technology components for internal and external communication purposes.</summary>
+    <mission>Designs and codes social media applications and websites. Makes recommendations on Application Programming Interface (API) and supports efficiency through appropriate content management systems.</mission>
+    <deliverables>
+        <accountable/>
+        <responsible>
+            <deliverable>Non Functional Requirements</deliverable>
+            <deliverable>User Engagement Evaluation Tools</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Solution in Operation</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Carry out user experience design methods and translate into application requirements</task>
+        <task>Design web and multimedia applications content in line with user and customer needs</task>
+        <task>Test and resolve any technical, usability and accessibility issues</task>
+        <task>Ensure compliance with privacy, legal requirements and accessibility standards</task>
+        <task>Provide guidance on search engine optimisation (SEO)</task>
+    </tasks>
+    <competences>
+        <competence level="2">A.6.  Application Design</competence>
+        <competence level="3">B.1.  Application Development</competence>
+        <competence level="2">B.3.  Testing</competence>
+        <competence level="3">B.4. Solution Deployment</competence>
+        <competence level="2">D.12.  Digital Marketing</competence>
+    </competences>
+    <kpi>Integration level of social media appplication</kpi>
+</profile>

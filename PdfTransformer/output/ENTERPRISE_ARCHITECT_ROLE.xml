@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>ENTERPRISE ARCHITECT ROLE</title>
+    <summary>Designs and maintains the holistic architecture of business processes and information systems.</summary>
+    <mission>Maintains a holistic perspective of the organisation strategy, processes, information, security and ICT assets. Links the mission, strategy and business processes to the IT strategy. Ensures project choices are integrated consistently, efficiently and in a sustainable manner according to the enterprise’s digital standards.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Enterprise Architecture</deliverable>
+        </accountable>
+        <responsible/>
+        <contributor>
+            <deliverable>Business Plan</deliverable>
+            <deliverable>New Solution and Critical Business Process Integration Proposal</deliverable>
+            <deliverable>Knowledge or Information Base</deliverable>
+            <deliverable>Business Process Definition</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Align digital and ICT strategies and planning with the organisation’s business goals</task>
+        <task>Anticipate future business needs and plan for how architecture will support/enable it</task>
+        <task>Streamline business processes, functions, procedures and workflows and apply a consistent implementation approach</task>
+        <task>Manage stakeholder engagement in the development of new processes and systems and verifies feasibility</task>
+        <task>Conduct post-implementation reviews to evaluate benefits accrued from new processes and systems</task>
+        <task>Build and maintain standards and enterprise architecture model and principles, for example process mapping</task>
+        <task>Evaluate the impact of changes within the ecosystem of the organisation (including political, technical, social, regulatory, legal) on the enterprise architecture</task>
+    </tasks>
+    <competences>
+        <competence level="5">A.1.  IS and Business Strategy Alignment</competence>
+        <competence level="4">A.3.  Business Plan Development</competence>
+        <competence level="4">A.5.  Architecture Design</competence>
+        <competence level="5">A.7.  Technology Trend Monitoring</competence>
+        <competence level="3">E.8.  Information Security Management</competence>
+    </competences>
+    <kpi>Quality and consistency of enterprise architecture aligned with business objectives</kpi>
+</profile>

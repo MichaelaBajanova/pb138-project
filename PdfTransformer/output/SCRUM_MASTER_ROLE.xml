@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>SCRUM MASTER ROLE</title>
+    <summary>Leads and coaches an agile team.</summary>
+    <mission>Creates a high performance self-managed dynamic team minimising impediments to development progress. Drives team by applying the agile process to achieve an optimesed work-flow through continuous improvement. Supports team goals and coordinates activities with other teams.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Iteration Retrospective</deliverable>
+        </accountable>
+        <responsible>
+            <deliverable>Sprint Planning</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Development Process</deliverable>
+            <deliverable>Team backlog</deliverable>
+            <deliverable>Training Program</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Help team improve and take responsibilty for their actions to deploy agile values, principles and practices</task>
+        <task>Support Product Owner in the backlog management</task>
+        <task>Apply team-building techniques to improve performances.</task>
+        <task>Promote continuous learning and professional development of team members</task>
+        <task>Ensure continuous improvement of software quality</task>
+        <task>Support team self-defined processes and rules</task>
+        <task>Facilitate regular team meetings, including daily stand-up, Iteration planning, team demo, and retrospective iteration</task>
+    </tasks>
+    <competences>
+        <competence level="3">B.3. Testing</competence>
+        <competence level="4">B.6. Systems Engineering</competence>
+        <competence level="3">D.9. Personnel Development</competence>
+        <competence level="3">E.4. Relationship Management</competence>
+        <competence level="3">E.5. Process Improvement</competence>
+    </competences>
+    <kpi>Continuous enhancement of agile methodology deployment</kpi>
+</profile>

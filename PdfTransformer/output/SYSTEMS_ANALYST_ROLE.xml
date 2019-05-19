@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>SYSTEMS ANALYST ROLE</title>
+    <summary>Analyses organisation requirements and specifies software and system requirements for new IT solutions.</summary>
+    <mission>Ensures the technical design and contributes to the implementation of new and/or enhanced software provision. Provides solutions for the improvement of organisational efficiency and productivity.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Software Component</deliverable>
+            <deliverable>Hardware Component</deliverable>
+        </accountable>
+        <responsible>
+            <deliverable>Integrated Solution</deliverable>
+            <deliverable>Technical Proposal</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>ICT Model</deliverable>
+            <deliverable>Solution Specification</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Analyse existing systems and business models</task>
+        <task>Recommend resolutions and improvements</task>
+        <task>Provide integrated solutions</task>
+        <task>Provide consolidate findings on components or processes</task>
+        <task>Author technical performance requirements</task>
+        <task>Ensure security by design</task>
+        <task>Maps and documents interfaces between legacy and new systems</task>
+    </tasks>
+    <competences>
+        <competence level="3">A.5. Architecture Design</competence>
+        <competence level="3">B.5 Documentation Production</competence>
+        <competence level="4">B.6. Systems Engineering</competence>
+        <competence level="3">E.5. Process Improvement</competence>
+    </competences>
+    <kpi>Fully functional ICT applications</kpi>
+</profile>

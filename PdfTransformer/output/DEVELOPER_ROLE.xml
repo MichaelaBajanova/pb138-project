@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>DEVELOPER ROLE</title>
+    <summary>Designs and/ or codes components to meet solution specifications.</summary>
+    <mission>Ensures building and implementing of ICT applications. Contributes to low-level design. Writes code to ensure optimum efficiency and functionality and user experience.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Documented Code</deliverable>
+        </accountable>
+        <responsible>
+            <deliverable>Software Component</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Software Design   Description</deliverable>
+            <deliverable>Test Procedure</deliverable>
+            <deliverable>User Experience Design</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Develop engineer and integrate components</task>
+        <task>Follow user experience guidelines</task>
+        <task>Aware of and address known security vulnerabilities, applying security by design</task>
+        <task>Shape documentation</task>
+        <task>Provide advanced, component technical support</task>
+        <task>Resolve issues prior to and following testing</task>
+    </tasks>
+    <competences>
+        <competence level="3">B.1. Application Development</competence>
+        <competence level="2">B.2. Component Integration</competence>
+        <competence level="2">B.3. Testing</competence>
+        <competence level="3">B.5. Documentation Production</competence>
+        <competence level="3">C.4. Problem Management</competence>
+    </competences>
+    <kpi>Fully functional components</kpi>
+</profile>

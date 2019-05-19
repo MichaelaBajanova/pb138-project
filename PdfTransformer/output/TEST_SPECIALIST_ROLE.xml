@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>TEST SPECIALIST ROLE</title>
+    <summary>Designs and performs testing plans.</summary>
+    <mission>Ensures delivered or existing products, applications or services comply with technical and user needs and specifications. For existing systems, applications, innovations and changes; diagnoses failure of products or services to meet specification.</mission>
+    <deliverables>
+        <accountable/>
+        <responsible>
+            <deliverable>Test Plan</deliverable>
+            <deliverable>Test Procedure</deliverable>
+            <deliverable>Test Result</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Integrated Solution</deliverable>
+            <deliverable>Validated Solution</deliverable>
+            <deliverable>Solution Documentation</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Select and develop integration testing techniques to ensure the system meets requirements.</task>
+        <task>Design and customize integration tests, identify open issues.</task>
+        <task>Organise test plans and procedures for white and black box testing at unit, module, system and integration levels.</task>
+        <task>Establish procedures for result analysis and reporting.</task>
+        <task>Design and implement defect tracking and correction procedures</task>
+        <task>Write test program to assess software quality</task>
+        <task>Develop tools to increase test effectiveness</task>
+    </tasks>
+    <competences>
+        <competence level="3">B.2. Component Integration</competence>
+        <competence level="3">B.3. Testing</competence>
+        <competence level="2">B.4. Solution Deployment</competence>
+        <competence level="3">B.5. Documentation Production</competence>
+        <competence level="2">E.3. Risk Management</competence>
+    </competences>
+    <kpi>Consistency of the test plan according to the quality plan of the project</kpi>
+</profile>

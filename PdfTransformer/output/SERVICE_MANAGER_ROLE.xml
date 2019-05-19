@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>SERVICE MANAGER ROLE</title>
+    <summary>Plans, implements and manages solution provision.</summary>
+    <mission>Manages the definition of Service Level Agreements (SLAs), Operational Level Agreements (OLAs) contracts and Key Performance Indicators (KPIs). Provides people management of staff monitoring, reporting and fulfilling service activities. Takes mitigation action in case of non-fulfilment of agreements.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Solution in Operation</deliverable>
+        </accountable>
+        <responsible>
+            <deliverable>Service Level Agreement</deliverable>
+            <deliverable>Solved Incident</deliverable>
+            <deliverable>Service Catalogue</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Quality Performance Indicators</deliverable>
+            <deliverable>Technical Proposal</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Define Service requirements</task>
+        <task>Negotiate SLA / OLA</task>
+        <task>Manage solution operation</task>
+        <task>Provide service delivery</task>
+        <task>Maintain and contribute to the creation of the department budget</task>
+        <task>Manage staff development</task>
+    </tasks>
+    <competences>
+        <competence level="4">A.2. Service</competence>
+        <competence level="3">C.3. Service Delivery</competence>
+        <competence level="4">C.4. Problem Management</competence>
+        <competence level="3">D.8. Contract Management</competence>
+        <competence level="3">D.9. Personnel Development</competence>
+    </competences>
+    <kpi>Fulfilment of Service Levels</kpi>
+</profile>

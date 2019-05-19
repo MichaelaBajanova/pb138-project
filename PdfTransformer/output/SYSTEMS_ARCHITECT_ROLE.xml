@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>SYSTEMS ARCHITECT ROLE</title>
+    <summary>Plans, designs and integrates ICT system components including hardware, software and services.</summary>
+    <mission>Designs, integrates and implements complex technical ICT solutions ensuring procedures and models for development are current and comply with common standards. Monitors new technology developments and applies if appropriate. Provides technological design leadership.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Solution Specification</deliverable>
+            <deliverable>Integrated Solution</deliverable>
+        </accountable>
+        <responsible>
+            <deliverable>Solution and Critical Business Process Integration Proposal</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Development Process</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Specify and implement the architecture of complex ICT solutions</task>
+        <task>Lead development and integration of components</task>
+        <task>Lead and/ or conduct system integration</task>
+        <task>Ensure incorporation of security by design</task>
+        <task>Analyse technical and business requirements</task>
+        <task>Develop and maintain a comprehensive record of usability requirements</task>
+    </tasks>
+    <competences>
+        <competence level="4">A.5. Architecture Design</competence>
+        <competence level="4">A.7. Technology Trend Monitoring</competence>
+        <competence level="4">A.9. Innovating</competence>
+        <competence level="4">B.2. Component Integration</competence>
+        <competence level="4">B.6. Systems Engineering</competence>
+    </competences>
+    <kpi>Effectiveness and efficiency of solution implementation</kpi>
+</profile>

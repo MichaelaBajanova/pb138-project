@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>ICT OPERATIONS MANAGER ROLE</title>
+    <summary>Manages operations, people and overall ICT resources.</summary>
+    <mission>Implements and maintains a designated part of an ICT operation ensuring that activities are conducted in accordance with organisational rules, processes and standards. Plans changes and implements them in accordance with organisational strategy and budget. Risk manages and ensures the effectiveness of the ICT infrastructure.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Budget Plan</deliverable>
+        </accountable>
+        <responsible>
+            <deliverable>HR Development Plan</deliverable>
+            <deliverable>Training Program</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Sustainable ICT Policy</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Coordinate and manage staff</task>
+        <task>Direct, organize, plan and monitor activities</task>
+        <task>Negotiate the objectives and resources</task>
+        <task>Manage the departmental budget</task>
+        <task>Establish and monitor management information</task>
+        <task>Analyse and propose solutions for continuous productivity improvement</task>
+        <task>Manage the implementation and monitoring of IS quality assurance and security</task>
+        <task>Communicate with internal business departments and project owners</task>
+    </tasks>
+    <competences>
+        <competence level="4">D.9. Personnel Development</competence>
+        <competence level="4">E.2. Project and Portfolio Management</competence>
+        <competence level="3">E.3. Risk Management</competence>
+        <competence level="3">E.6. ICT Quality Management</competence>
+        <competence level="3">E.8. Information Security Management</competence>
+    </competences>
+    <kpi>Optimisation of overall resources</kpi>
+</profile>

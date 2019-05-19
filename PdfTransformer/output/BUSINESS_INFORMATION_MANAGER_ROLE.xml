@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>BUSINESS INFORMATION MANAGER ROLE</title>
+    <summary>Proposes, plans and manages functional development of the Information System (IS) focusing upon the needs of users.</summary>
+    <mission>Aligns the Information System to the business strategy within their area/domain. Ensures continuous enhancement whilst accounting for user requirements, service quality and budgetary constraints.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Project Portfolio</deliverable>
+        </accountable>
+        <responsible>
+            <deliverable>Solution Specification</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Business Plan</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Manage the information and communication technology development focused on user needs</task>
+        <task>Prepare for changes to the Information System influenced by technology updates or user needs</task>
+        <task>Formalise, consolidate and drive the development of the IS configuration</task>
+        <task>Evaluate the relevance of the Information Systems to users</task>
+        <task>Liaise between the user community and the IS infrastructure</task>
+        <task>Translate user requirements into functional specifications</task>
+    </tasks>
+    <competences>
+        <competence level="4">A.1. IS and Business Strategy Alignment</competence>
+        <competence level="4">A.3. Business Plan Development</competence>
+        <competence level="4">E.4. Relationship Management</competence>
+        <competence level="4">E.7. Business Change Management</competence>
+        <competence level="5">E.9. IS Governance</competence>
+    </competences>
+    <kpi>Business user requirement satisfaction</kpi>
+</profile>

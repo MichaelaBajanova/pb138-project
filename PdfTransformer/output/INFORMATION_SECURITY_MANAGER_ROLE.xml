@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>INFORMATION SECURITY MANAGER ROLE</title>
+    <summary>Leads and manages the organisation information security policy.</summary>
+    <mission>Defines the information security strategy and manages implementation across the organisation. Embeds proactive information security protection by assessing, informing, alerting and educating the entire organisation.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Information Security Policy</deliverable>
+        </accountable>
+        <responsible>
+            <deliverable>Knowledge or Information Base</deliverable>
+            <deliverable>Information Security Strategy</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Risk Management Policy</deliverable>
+            <deliverable>New Solution and Critical Business Integration Proposal</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Define the information security strategy and standards</task>
+        <task>Contribute to the development of the organisation’s security policy</task>
+        <task>Manages security audits</task>
+        <task>Evaluate risks, threats and consequences</task>
+        <task>Establish and manage prevention, detection, correction and remediation plans</task>
+        <task>Inform and raise awareness among general management and across all IT users and professionals</task>
+        <task>Conduct information security operations</task>
+    </tasks>
+    <competences>
+        <competence level="4">A.7. Technology Trend Monitoring</competence>
+        <competence level="5">D.1. Information Security Strategy Development</competence>
+        <competence level="4">E.3. Risk Management</competence>
+        <competence level="4">E.8. Information Security Management</competence>
+        <competence level="5">E.9. IS Governance</competence>
+    </competences>
+    <kpi>Security policy effectiveness</kpi>
+</profile>

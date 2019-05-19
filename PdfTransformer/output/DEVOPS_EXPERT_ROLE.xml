@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>DEVOPS EXPERT ROLE</title>
+    <summary>Implements processes and tools to successfully deploy DevOps techniques across the entire solution development lifecycle.</summary>
+    <mission>Applies a cross-functional, collaborative approach for the creation of customer-centric software solutions. Introduces automation throughout the software production system to deliver better software faster.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Integrated Solution</deliverable>
+        </accountable>
+        <responsible>
+            <deliverable>Development Process</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Test Procedure</deliverable>
+            <deliverable>Release</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Implement and manage continuous distribution methodologies</task>
+        <task>Design systems with high levels of availability and scalability</task>
+        <task>Manage testing across the release lifecycle</task>
+        <task>Facilitate cross functional collaboration and engagement</task>
+        <task>Design and manage process automation tools</task>
+        <task>Adopt an agile software development methodology</task>
+        <task>Manage continuous integration tool management</task>
+    </tasks>
+    <competences>
+        <competence level="3">B.1. Application Development</competence>
+        <competence level="4">B.2. Component Integration</competence>
+        <competence level="4">B.3. Testing</competence>
+        <competence level="3">B.4. Solution Deployment</competence>
+        <competence level="3">C.2. Change Support</competence>
+    </competences>
+    <kpi>Reduced time to implement solutions</kpi>
+</profile>

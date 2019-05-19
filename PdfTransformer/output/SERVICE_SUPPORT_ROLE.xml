@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>SERVICE SUPPORT ROLE</title>
+    <summary>Provides remote or onsite diagnosis or guidance to internal or external clients with technical issues.</summary>
+    <mission>Provides user support and troubleshoots ICT problems and issues. The primary objective is to enable users to maximize their productivity through efficient and secure use of ICT equipment or software applications.</mission>
+    <deliverables>
+        <accountable/>
+        <responsible>
+            <deliverable>First Level Support</deliverable>
+            <deliverable>Incidents Database</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Solved Incident</deliverable>
+            <deliverable>Escalation Process</deliverable>
+            <deliverable>Second Level Support</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Identify and diagnose issues and problems</task>
+        <task>Categorize and record reported queries and provide solutions</task>
+        <task>Support problem identification</task>
+        <task>Advise users on appropriate course of action</task>
+        <task>Monitor issues from start to resolution</task>
+        <task>Escalate, if needed, unresolved problems to a higher level of support</task>
+        <task>Provide essential online security advice and support</task>
+    </tasks>
+    <competences>
+        <competence level="2">C.1. User Support</competence>
+        <competence level="2">C.2. Change Support</competence>
+        <competence level="1">C.3. Service Delivery</competence>
+        <competence level="2">C.4. Problem Management</competence>
+    </competences>
+    <kpi>Responsiveness and accuracy of solution provision for specific problem</kpi>
+</profile>

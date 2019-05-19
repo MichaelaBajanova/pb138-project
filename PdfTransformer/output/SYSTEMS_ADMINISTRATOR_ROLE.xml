@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>SYSTEMS ADMINISTRATOR ROLE</title>
+    <summary>Administers ICT System components to meet service requirements.</summary>
+    <mission>Installs software, configures and upgrades ICT systems. Administers day-to-day operations to satisfy continuity of service, recovery, security and performance needs.</mission>
+    <deliverables>
+        <accountable/>
+        <responsible>
+            <deliverable>Solution in Operation</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Solved Incident</deliverable>
+            <deliverable>Incidents Database</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Investigate, diagnose and solve system related problems</task>
+        <task>Install and upgrades software</task>
+        <task>Test upgrades</task>
+        <task>Schedule installation work, to minimize disruption</task>
+        <task>Diagnose and solve hardware or software problems</task>
+        <task>Comply with organisation procedures to ensure integrity and security of the system</task>
+    </tasks>
+    <competences>
+        <competence level="2">B.2. Component Integration</competence>
+        <competence level="2">B.3. Testing</competence>
+        <competence level="3">C.2. Change Support</competence>
+        <competence level="3">C.4. Problem Management</competence>
+        <competence level="2">E.8. Information Security Management</competence>
+    </competences>
+    <kpi>Systems in operation</kpi>
+</profile>

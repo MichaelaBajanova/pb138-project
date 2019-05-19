@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<profile>
+    <title>PROJECT MANAGER ROLE</title>
+    <summary>Manages projects to achieve optimal performance and results.</summary>
+    <mission>Defines, implements and manages projects from conception to final delivery. Responsible for achieving optimal results, conforming to standards for quality, safety and sustainability and complying with defined scope, performance, costs, and schedule. Deploys agile practices where applicable.</mission>
+    <deliverables>
+        <accountable>
+            <deliverable>Project Plan</deliverable>
+            <deliverable>Validated Solution</deliverable>
+        </accountable>
+        <responsible>
+            <deliverable>Solution Documentation</deliverable>
+        </responsible>
+        <contributor>
+            <deliverable>Quality Plan</deliverable>
+            <deliverable>Integrated Solution</deliverable>
+            <deliverable>Change Management Plan</deliverable>
+        </contributor>
+    </deliverables>
+    <tasks>
+        <task>Organize, coordinate and lead the project team</task>
+        <task>Maintain stakeholder engagement and communication</task>
+        <task>Supervise project progress</task>
+        <task>Coordinate, record and ensure quality compliance</task>
+        <task>Circulate and distribute information from the project owner</task>
+        <task>Ensure the project helps to support the organisation’s wider goals</task>
+        <task>Comply with budgets and delivery times</task>
+        <task>Update the project according to changing circumstances</task>
+    </tasks>
+    <competences>
+        <competence level="4">A.4. Product/Service Planning</competence>
+        <competence level="4">E.2. Project and Portfolio Management</competence>
+        <competence level="3">E.3. Risk Management</competence>
+        <competence level="3">E.4. Relationship Management</competence>
+        <competence level="3">E.7. Business Change Management</competence>
+    </competences>
+    <kpi>Project scope achievement</kpi>
+</profile>
