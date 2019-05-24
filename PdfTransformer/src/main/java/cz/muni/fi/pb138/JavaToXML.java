@@ -12,10 +12,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Ludovit Kopcsanyi
+ * Class used to convert Role object to XML
  */
 public class JavaToXML {
 
+	/**
+	 * converts the Role object to XML and saves it as a file
+	 * @param role instance of Role class
+	 * @param file_name name of xml file to be saved
+	 */
 	public static void convert(Role role, String file_name) throws Exception {
 
 		JAXBContext context = JAXBContext.newInstance(Profile.class);
@@ -76,6 +81,9 @@ public class JavaToXML {
 
 }
 
+/**
+ * Profile element
+ */
 @XmlRootElement
 @XmlType(propOrder={"title", "summary", "mission", "deliverables", "tasks", "competences", "kpi"})
 class Profile {
@@ -86,6 +94,7 @@ class Profile {
 	private Deliverables deliverables;
 	private Competences competences;
 	private Tasks tasks;
+	private String kpi;
 
 	public Competences getCompetences() {
 		return competences;
@@ -94,8 +103,6 @@ class Profile {
 	public void setCompetences(Competences competences) {
 		this.competences = competences;
 	}
-
-	private String kpi;
 
 	public Tasks getTasks() {
 		return tasks;
@@ -146,6 +153,9 @@ class Profile {
 	}
 }
 
+/**
+ * Deliverables element
+ */
 @XmlRootElement
 @XmlType(propOrder={"accountable", "responsible", "contributor"})
 class Deliverables {
@@ -179,6 +189,9 @@ class Deliverables {
 	}
 }
 
+/**
+ * Accountable element
+ */
 @XmlRootElement
 class Accountable {
 
@@ -193,6 +206,9 @@ class Accountable {
 	}
 }
 
+/**
+ * Responsible element
+ */
 @XmlRootElement
 class Responsible {
 
@@ -208,6 +224,9 @@ class Responsible {
 	}
 }
 
+/**
+ * Contributor element
+ */
 @XmlRootElement
 class Contributor {
 
@@ -222,6 +241,9 @@ class Contributor {
 	}
 }
 
+/**
+ * Tasks element
+ */
 @XmlRootElement
 class Tasks {
 
@@ -236,6 +258,9 @@ class Tasks {
 	}
 }
 
+/**
+ * Competences element
+ */
 @XmlRootElement
 class Competences {
 
@@ -250,6 +275,9 @@ class Competences {
 	}
 }
 
+/**
+ * Competence element
+ */
 @XmlRootElement
 class Competence {
 
