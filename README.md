@@ -36,6 +36,6 @@ Code for the PDF parser is located in `PdfTransformer` directory. The dircetory 
 - Michaela Bajánová: Responsible for XML Schema, wiki page and documentation. [Report](reports/zaverecna_sprava_bajanova.pdf)
 - Filip Daniel Fedin: Responsible for PDF parser, README file and documentation. [Report](reports/zaverecna_sprava_fedin.pdf)
 - Ľudovít Kopcsányi: Responsible for transforming parsed data to XML file. [Report]()
-- Matej Macák: Responsible for XSLT file. [Report]()
+- Matej Macák: Responsible for XSLT file. [Report](reports/result_message.pdf)
 
 
