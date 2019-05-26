@@ -1,0 +1,28 @@
+<article xmlns='http://docbook.org/ns/docbook'>
+ <info>
+  <title>Záverečná správa projektu</title>
+  <author>
+    <personname>
+      <firstname>Michaela</firstname>
+      <surname>Bajanová</surname>
+    </personname>
+  </author>
+ </info>
+
+ <section id="intro">
+  <title>Úvod</title>
+  <para>
+    Mojou úlohou bolo vytvoriť XML Schema na základe CWA-16458-2 dokumentu, v ktorom sa na strane 15 nachádza tabuľka s popisom jednotlivých častí profilu role. Neskôr po tom, ako Matej dokončil transformáciu z XML do HTML som sa ujala úpravy XSLT a CSS súboru, aby sme docielili krajšie webové rozhranie.
+  </para>
+</section>
+
+ <section id="body">
+  <title>Vypracovanie</title>
+  <para>
+    Pri vytváraní XML Schema som sa držala spomínanej tabuľky. Časti title, summary, mission a KPI som zadefinovala ako tagy obsahujúce reťazec, podľa potreby som pridala restriction vo forme regulárneho výrazu, aby som docielila napr. maximálne tri vety v mission. Definícia deliverables bola náročnejšia, kvôli podmienke maximálneho počtu 6 deliverables v accountable, responsible a contributor dokopy. Po dlhšom pátraní ako podobnú vec napísať v XML Schema som zistila, že vo verzií 1.0 sa niečo takéto spraviť nedá, možné je to až vo verzií 1.1 pomocou assert. Element tasks obsahuje potomkov task, ktorých počet je minimálne 6 a maximálne 8. Pri validovaní XML dokumentov som sa ale stretla s chybou v jednom profile, kde táto podmienka nebola splnená (taskov je len 5) a tým pádom tento dokument neprešiel validáciou. Verím, že toto nie je chyba navrhnutej XML Schema, ale daného PDF dokumentu. Element competences je podobný ako element tasks, tiež obsahuje potomkov competence ale s tým rozdielom, že tieto elementy majú atribút level. Všetky spomínané elementy obsahujú reťazce. 
+  </para>
+  <para>
+    Vzhľad webového rozhrania som sa snažila ponechať veľmi jednoduchý. V index.html je záhlavie s nadpisom a zoznam profilov. Na každý profil sa dá kliknúť a otvoriť ho. HTML súbory s profilmi sú výsledkom transformácie, pri čom pre ľahší pohyb po stránke som pridala menu s odkazmi na profily a hlavnú stránku (index.html).
+  </para>
+</section>
+</article>
