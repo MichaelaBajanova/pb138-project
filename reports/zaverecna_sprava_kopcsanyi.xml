@@ -1,0 +1,28 @@
+<article xmlns='http://docbook.org/ns/docbook'>
+ <info>
+  <title>Záverečná správa projektu</title>
+  <author><personname>
+ <firstname>Ľudovít</firstname>
+ <surname>Kopcsányi</surname>
+  </personname></author>
+ </info>
+
+ <section id="intro">
+  <title>Úvod</title>
+  <para>Mojou úlohou v tíme bolo spracovať vyextrahované dáta do XML súboru.</para>
+  </section>
+
+ <section id="body">
+  <title>Vypracovanie</title>
+  <para>Vytvoril som triedu JavaToXML, ktorá spracováva triedu Role do XML súboru.
+    Keďže som dostal dobrý návrh triedy Role, tak táto úloha bola takmer bezproblémová. 
+    Pôvodne som plánoval, že spravím program, v ktorom manuálne vypíšem obsah triedy do nového XML súboru. Po chvíli programovania som si povedal, že určite existuje efektívnejší, vhodnejší spôsob na niečo takéto. Našiel som na toto vhodnú triedu Marshaller, ktorá dokáže pomerne jednoducho vytvoriť XML z danej triedy. Práca s touto triedou je naozaj jednoduchá.
+    Vytvoril som triedu Profile s anotáciou XmlRootElement, ktorá predstavovala hlavný element v XML. Tomuto elementu som priradil atribúty podľa triedy Role a vytvorenej XML schémy a pomocou Marshalleru som vyexportoval triedu Profile ako XML súbor.
+  </para>
+ </section>
+
+ <section id="conclusion">
+  <title>Záver</title>
+  <para>Vytvoril som program, ktorý vyextrahuje triedu Role do XML súboru, ktorý uloží do vlastnej zložky.</para>
+ </section>
+</article>
