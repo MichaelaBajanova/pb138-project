@@ -1,0 +1,26 @@
+<article xmlns='http://docbook.org/ns/docbook'>
+ <info>
+  <title>Záverečná správa projektu</title>
+  <author><personname>
+ <firstname>Matej</firstname>
+ <surname>Macák</surname>
+  </personname></author>
+ </info>
+
+ <section id="intro">
+  <title>Úvod</title>
+  <para>Mojou úloha v tíme bolo záverečné transformovanie už vytvorených xml dokumentov do html schémy a načrtnúť možnú výslednú podobu tohto dokumentu</para>
+  </section>
+
+ <section id="body">
+  <title>Vypracovanie</title>
+  <para>Postup mojej práce spočíval v preštudovaní 3 domácej úlohy a v zopakovaní tutoriálov na xslt zo stránky w3schools. Následne som si preštudoval xsd schému ktorú už mala Michaela vypracovaná a pre lepšie pochopenie aj pdf súbory kde bola daná štruktúra bližšie popísaná. V ďaľšom kroku som hrubo načrtol template-match pre základné elementy. Vyskytol sa však problém, že pri spustení xslt transformácie na vzorovom súbore (ktorý už bol k dispozícii) sa nestalo nič a výsledný html dokument sa v prehliadači zobrazoval len ako jednoliaty blok textu. Keďže v 3. domácej úlohe tento problém nebol, predpokladal som, že sa v niečom tieto dve transformácie musia odlišovať. Keďže transformácie sa v zásadných veciach neodlišovali, prekontroloval som pomocný súbor a zistil, že sa v elemente profile nezhodoval atribút xmlns s xmlns:r v elemente stylesheet v transformácii. Po oprave tejto drobnosti som mohol otestovať funkčnosť riešenie a upravovať ho. Jedna z vecí, ktoré sa vyskytli v pôvodnej verzii a ktorá nepracovala správne bolo používanie xsl:value-of select="r:task" v sekcii template match r:tasks. Takéto použitie fungovalo len ak by sa tam element tasks nachádzal najviac jedenkrát, a preto tam bolo potrebné použit apply templates, ktorý sa už aplikuje aj na viac elementov tasks. Po dokončení transformácie som dal jednoduchý návrh na vzhľad stránky ktorý bol zo značnej časti založený na grafickom vzhľade tretej domácej úlohy, ktorý neskôr prepracovala Michaela.
+		
+  </para>
+ </section>
+
+ <section id="conclusion">
+  <title>Záver</title>
+  <para>Po dokončení svojej časti bolo možné prevádzať ľubovoľný dokument formátu xml odpovedajúceme schéme ktorú vypracovala Michaela do formátu html s jednoduchým grafickým rozhraním</para>
+ </section>
+</article>
